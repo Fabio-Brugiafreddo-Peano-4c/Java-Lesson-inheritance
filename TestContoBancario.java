@@ -5,6 +5,8 @@
  */
 package testcontobancario;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author brugiafreddo.fabio
@@ -15,12 +17,15 @@ public class TestContoBancario {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ContoBancario c1 = new ContoBancarioEsteso("1a0F");
-         ContoBancario c2 = new ContoBancarioEsteso("1a0F",9000);
-          ContoBancario c3 = new ContoBancarioEsteso("1a0F",1000);
-        c2.deposito(1000);
-        c2.prelievo(2000);
-        System.out.println(c2);
+        String nomeCont = JOptionPane.showInputDialog("Nome Conto");
+        int bilancio = Integer.parseInt(JOptionPane.showInputDialog("inserisci bilancio"));
+        int fido = Integer.parseInt(JOptionPane.showInputDialog("inserisci fido"));
+        ContoBancario c2 = new ContoBancarioEsteso(fido, nomeCont, bilancio);
+        int deposito = Integer.parseInt(JOptionPane.showInputDialog("inserisci deposito"));
+        c2.deposito(deposito);
+        int prelievo = Integer.parseInt(JOptionPane.showInputDialog("inserisci prelievo"));
+        c2.prelievo(prelievo);
+        JOptionPane.showMessageDialog(null, c2);
     }
     
 }
