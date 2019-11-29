@@ -1,8 +1,8 @@
 ﻿# Ereditarietà e Polimorfismo 
 Riusare il software
 # Ereditarietà
-• A volte si incontrano classi con funzionalità simili In quanto sottendono concetti semanticamente “vicini” <br>
-• È possibile creare classi disgiunte replicando le porzione di stato/comportamento condivise L’approccio “Copia&Incolla”, però, non
+• A volte si incontrano classi con funzionalità simili In quanto sottendono concetti “vicini” <br>
+• È possibile creare classi diverse replicando le porzione di stato/comportamento. L’approccio “Copia&Incolla”, però, non
 è una strategia vincente (Difficoltà di manutenzione correttiva e perfettiva) . Meglio “specializzare” codice funzionante Sostituendo il minimo necessario <br>
 
 • Meccanismo per definire una nuova classe (classe derivata) come specializzazione di un’altra (classe base) 
@@ -35,7 +35,7 @@ Ereditarietà in Java <br>
 • Facilitare la manutenzione<br>
 
 # Polimorfismo<br>
-il polimorfismo è un altro concetto fondamentale della programmazione ad oggetti e risulta essere anche quello più ostico per la piena comprensione della sua utilità. Dal punto di vista implementativo il polimorfismo per i metodi si ottiene utilizzando
+il polimorfismo è un altro concetto fondamentale della programmazione ad oggetti e risulta essere anche quello più difficile per la piena comprensione della sua utilità. Dal punto di vista implementativo il polimorfismo per i metodi si ottiene utilizzando
  l'overload e l'override dei metodi stessi. Quando abbiamo parlato dei metodi abbiamo detto che ogni metodo è identificato dal nome che gli assegniamo, adesso estendiamo questa definizione dicendo che un metodo è univocamente determinato se prendiamo in considerazione sia il suo nome che la lista di tutti i suoi parametri. Ciò permette, di fatto, di avere all'interno di una classe più metodi che hanno lo stesso nome, ma con parametri diversi. L'overload quindi si basa sulla scrittura di più metodi identificati dallo stesso nome che però hanno, in ingresso, parametri di tipo e numero diverso. Con il termine override si intende una vera e propria riscrittura di un certo metodo di una classe che abbiamo ereditato. Dunque, necessariamente, l'override implica ereditarietà.
 
 # Il riferimento this<br> 
